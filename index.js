@@ -85,9 +85,10 @@ async function main(){
 	// console.log(cvlist);
 	console.log("we have "+cvlist.length+" cvs to parse");
 	console.log("#, cienciavitae, nome, temDoutoramento, dataDoutoramento, isECR");
+	var startindex = 0; // offset the start index of the following for loop
+	if (process.argv[2]) { startindex = process.argv[2]; }
 	// parse one cv at a time and print it to the console as a .csv (comma separated value table)
-	for (var i = 0; i < cvlist.length; i++) {
-		// please note that if the code fails or timesout, you can change the "var i = 0" to be index of the last successful retrieved cv!
+	for (var i = startindex; i < cvlist.length; i++) {
 		// console.log(cvlist[i]);
 		var currentResercherData = await parseCienciaVitae(cvlist[i]);
 		console.log(i,",", cvlist[i],",", currentResercherData[0],",", currentResercherData[1],",", currentResercherData[2],",", currentResercherData[3]);
