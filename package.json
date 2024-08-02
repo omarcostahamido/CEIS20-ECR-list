@@ -1,0 +1,25 @@
+{
+  "name": "ecr-list",
+  "version": "1.0.0",
+  "description": "listing CEIS20's Early Carreer Researchers based on public data.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/omarcostahamido/ecr-list.git"
+  },
+  "keywords": [
+    "nodejs"
+  ],
+  "author": "OCH",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/omarcostahamido/ecr-list/issues"
+  },
+  "homepage": "https://github.com/omarcostahamido/ecr-list#readme",
+  "dependencies": {
+    "node-fetch": "^2.7.0"
+  }
+}
